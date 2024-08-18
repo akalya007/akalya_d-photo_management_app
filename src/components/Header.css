@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px; 
+    background-color: white; 
+    padding: 0 20px; 
+  }
+  
+  .header-black {
+    background-color: black;
+  }
+ 
+  .snapbox-logo {
+    height: 110px;
+    width: 110px;
+    margin-left: 50px; 
+  }
+  
+  .nav-elements {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .login-link {
+    color: white; 
+    text-decoration: none;
+  }
+  
+  .login-link {
+    color: black;
+  }
+  
+  .login-link a {
+    color: black; 
+    text-decoration: none;
+    display: block;
+  }
+  
+  .login-link:hover {
+    background-color: #f0f0f0;
+  }
+  

@@ -1,0 +1,188 @@
+.gallery-page {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.gallery-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 10px;
+  flex-wrap: wrap; 
+}
+
+.gallery-logo {
+  height: 80px;
+  width: 120px;
+  margin-left: 10px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.search-input {
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-button {
+  padding: 5px 10px;
+  margin-left: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.logout-button {
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.upload-button {
+  padding: 10px 20px;
+  margin: 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  align-self: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); /* Single column on small screens */
+  
+  padding: 2px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-body {
+  
+  margin-left: 8px;
+}
+
+.card-body p,
+.card-body span {
+  margin: 0.5rem 0;
+}
+
+.figure-container {
+  max-height: 15rem;
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.custom-progress-bar-container {
+  width: 50%;
+  background-color: #f3f3f3;
+  height: 3px;
+}
+
+.custom-progress-bar {
+  width: 100%;
+  height: 4px;
+  background-color: #007bff;
+  animation: progress 1.5s infinite;
+}
+
+.scroll-button {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+  display: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.scroll-button.show {
+  display: block;
+}
+
+.scroll-button:hover {
+  background-color: #0056b3;
+}
+
+
+@media (min-width: 768px) {
+  .gallery-logo {
+    height: 90px;
+    width: 140px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+    width: 90%;
+  }
+
+  .card-body p,
+  .card-body span {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gallery-logo {
+    height: 100px;
+    width: 150px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    width: 85%;
+  }
+
+  .card-body p,
+  .card-body span {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+    width: 80%;
+  }
+}

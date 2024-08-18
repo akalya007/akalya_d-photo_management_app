@@ -1,0 +1,121 @@
+.upload-container {
+  padding: 0px;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  margin-top: 40px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.upload-container h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.upload-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+}
+
+.upload-container input,
+.upload-container textarea {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.upload-container textarea {
+  resize: vertical; 
+  min-height: 100px; 
+}
+
+.upload-container .submit-button {
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-container .submit-button:hover {
+  background-color: #0056b3;
+}
+
+.upload-container .submit-button.loading {
+  background-color: #6c757d; 
+  cursor: not-allowed; 
+}
+
+
+@media (min-width: 768px) {
+  .upload-container {
+    padding: 30px;
+  }
+
+  .upload-container h2 {
+    font-size: 2.5rem;
+  }
+
+  .upload-container input,
+  .upload-container textarea {
+    font-size: 18px;
+    padding: 14px;
+  }
+
+  .upload-container .submit-button {
+    font-size: 18px;
+    padding: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .upload-container {
+    padding: 10px;
+  }
+
+  .upload-container form {
+    width: 50%; 
+  }
+
+  .upload-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .upload-container input,
+  .upload-container textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .upload-container .submit-button {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .upload-container {
+    padding: 40px;
+  }
+
+  .upload-container h2 {
+    font-size: 3rem;
+  }
+
+  .upload-container input,
+  .upload-container textarea {
+    font-size: 20px;
+    padding: 16px;
+  }
+
+  .upload-container .submit-button {
+    font-size: 20px;
+    padding: 16px;
+  }
+}

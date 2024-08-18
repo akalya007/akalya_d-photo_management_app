@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+body {
+  background-image: url('./images/back-ground4.jpg'); /* Background image for the body */
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.snapbox-logo {
+  height: 50px;
+  width: 50px;
+}
+
+.nav-elements {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-elements li {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-elements li a {
+  color: white;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  height: calc(100vh - 70px);
+  margin-top: 70px; 
+  padding: 0 20px;
+}
+
+.home-container h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.home-container p {
+  font-size: 1.5rem;
+  max-width: 600px;
+}
+
+
+@media (max-width: 767px) {
+  .header {
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .snapbox-logo {
+    height: 40px;
+    width: 40px;
+  }
+
+  .nav-elements {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .home-container h1 {
+    font-size: 2rem;
+  }
+
+  .home-container p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header {
+    padding: 1rem 1.5rem;
+  }
+
+  .snapbox-logo {
+    height: 45px;
+    width: 45px;
+  }
+
+  .home-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .home-container p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    padding: 1rem 3rem;
+  }
+
+  .snapbox-logo {
+    height: 60px;
+    width: 60px;
+  }
+
+  .home-container h1 {
+    font-size: 3.5rem;
+  }
+
+  .home-container p {
+    font-size: 1.7rem;
   }
 }

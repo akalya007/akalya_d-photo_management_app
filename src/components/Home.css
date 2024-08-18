@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body {
+    background-image: url('./images/back-ground4.jpg'); 
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.5); 
+  }
+  
+  .snapbox-logo {
+    height: 50px;
+    width: 100px;
+  }
+
+
+  .sign-up-button {
+    font-family: Georgia, serif; 
+    color: black; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    width: 100px;
+    font-weight: 550; 
+    
+  }
+
+  .sign-up-button{
+ color: black;
+  }
+  
+  .sign-up-button a {
+    color: black; 
+    text-decoration: none;
+    display: block;
+  }
+  
+  .sign-up-button:hover {
+    background-color: #f0f0f0; 
+}
+  .login-link{
+    font-family: Georgia, serif;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+  }
+  .nav-elements {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+  }
+   
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    text-align: center;
+    height: calc(100vh - 70px); 
+    margin-top: 0px; 
+    margin-bottom: 100px;
+  }
+  
+  .home-container h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .home-container h3 {
+    font-size: 2.0rem;
+    margin-bottom: 150px;
+
+  }
+  
+
+.snapbox-logo{
+    height: 110px;
+    width:110px;
+    margin-right: auto; 
+  }
+  
+  .header{
+    margin: 0;
+    display: flex;
+    justify-content:space-around;
+    height: 40px;
+    }
+    nav > ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+     nav >ul >  li {
+    list-style-type: none;
+    
+    
+     }
+
